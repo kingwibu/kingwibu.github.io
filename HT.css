@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.4s ease-in-out;
+}
+
+@font-face {
+    font-family: lordish;
+    src: url(../font/iCielLordish-Regular.otf);
+}
+
+:root {
+    --margin-content-body: 50px;
+}
+
+body {
+    background-color: rgba(255, 215, 178, 0.205);
+}
+
+.content-body {
+    width: auto;
+    height: calc(100vh - var(--margin-content-body)*2);
+    background: rgba(255, 215, 178, 0.521) url(../image/bg-HT.png) no-repeat right fixed;
+    background-size: contain;
+    margin: var(--margin-content-body);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    padding: 1vw 5vw 0 10vw;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 6vw;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu a {
+    color: rgba(0, 0, 0, 0.397);
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.menu li:hover a {
+    color: black;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.521);
+}
+
+.search-signin-bag {
+    align-self: start;
+    display: flex;
+}
+
+.search-signin-bag>div {
+    margin: 5px 15px;
+}
+
+.signin:hover a,
+.account:hover i,
+.search:hover i {
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70vh;
+}
+
+.content h1 {
+    font-family: lordish;
+    font-size: 8vw;
+    font-weight: 300;
+    background-image: linear-gradient(250deg, #ff8282, #3a3a89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sup-title li {
+    display: flex;
+    margin: 20px 0;
+}
+
+.sup-title li :is( p, a) {
+    padding: 17px;
+    color: rgb(160, 132, 132);
+}
+
+.sup-title a:hover,
+.sup-title p:hover {
+    color: white;
+}
+
+.sup-title .content-title {
+    text-align: center;
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0, 0.445);
+}
+
+.sup-title .fab,
+.sup-title .fas {
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.fa-facebook-f {
+    background-color: #3a3aff;
+    color: white;
+}
+
+.fa-phone-volume {
+    background-color: #ff4040;
+    color: white;
+}
+
+.fa-google {
+    background: white;
+    color: rgb(255, 121, 121);
+}
+
+.fa-instagram {
+    background: linear-gradient(215deg, rgb(103 103 255) 0%, rgb(255 66 66) 60%, #ffff71 85%);
+    color: white;
+    border-radius: 15px;
+    font-size: 45px;
+}
+
+@media screen and (max-width :1000px) {
+    .menu {
+        display: none;
+    }
+    .sup-title li :is( p, a) {
+        color: rgb(54, 22, 22);
+    }
+}
