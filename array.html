@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta name="description" content="">
+    <title>3D</title>
+</head>
+<script>
+    let sohang = prompt("nhap so hang");
+    let socot = prompt("nhap so cot");
+    let string = prompt("nhập kí tự ");
+    let str = [];
+    str = Array.from(string);
+
+
+    function arr1() {
+        let ct = prompt("nhập khoảng trừ");
+        let lenght = accii.length;
+        console.log(lenght);
+        for (let z = 1; z <= ct; z++) {
+            for (let i = 0; i < lenght; i++) {
+
+                for (let j = 0; j < lenght; j++) {
+                    if (accii[j] == str1[i]) {
+                        if ((j - z) > 0) {
+                            str1[i] = accii[j - z];
+
+                        } else {
+                            str1[i] = accii[lenght + (j - z)];
+                        }
+                    }
+                }
+            }
+
+            console.log(str1.join());
+        }
+
+    }
+    arr1();
+</script>
+
+</html>

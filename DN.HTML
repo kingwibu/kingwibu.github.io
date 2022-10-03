@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Signin/Signup</title>
+    <link rel="stylesheet" type="text/css" href="../css/DN.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-body">
+        <div class="logo">
+            <a href="index.html"><img src="../image/Untitled-3.png" alt="logo" id="logo"></a>
+        </div>
+
+        <div class="container1">
+
+            <form id="signin">
+
+                <div class="header1">
+
+                    <h3>Sign In</h3>
+
+
+                </div>
+
+
+
+                <div class="inputs">
+
+                    <input type="text" placeholder="Account" autofocus />
+
+
+                    <input type="password" placeholder="Password" />
+
+                    <div class="checkboxy">
+                        <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+                    </div>
+
+
+                </div>
+                <div class="contain-button">
+                    <a class="submit-1" href="#">SIGN IN </a>
+                </div>
+            </form>
+            <form id="signup">
+
+                <div class="header2">
+
+                    <h3>Sign Up</h3>
+
+
+                </div>
+
+
+
+                <div class="inputs">
+
+                    <input type="text" placeholder="Name" autofocus />
+
+                    <input type="text" placeholder="Account" autofocus />
+
+                    <input type="password" placeholder="Password" />
+
+                    <div class="checkboxy">
+                        <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+                    </div>
+
+
+                </div>
+                <div class="contain-button">
+                    <a class="submit-2" href="#">SIGN UP</a>
+                </div>
+            </form>
+            <div id="si1">
+                <P id="I">SING IN</P>
+            </div>
+            <div id="su1">
+                <P id="U">SING UP</P>
+            </div>
+
+        </div>
+    </div>
+    ​
+
+
+</body>
+<footer>
+
+
+    <script src="../javascrpit/jQuery.min.js"></script>
+    <script type="text/javascript">
+        $('#U').click(
+            function() {
+                $('#signin').addClass('signin');
+                $('#signup').addClass('signup');
+                $('#si1').addClass('signin1');
+                $('#su1').addClass('signup1');
+            }
+        );
+        $('#I').click(
+            function() {
+                $('#signin').removeClass('signin');
+                $('#signup').removeClass('signup');
+                $('#si1').removeClass('signin1');
+                $('#su1').removeClass('signup1');
+            }
+        );
+        $('.submit-1').click(
+            function() {
+                alert('Đăng nhập thành công');
+                window.location.href = 'index.html';
+            }
+        );
+        $('.submit-2').click(
+            function() {
+                alert('Tạo tài khoản thành công');
+                window.location.href = 'index.html';
+            }
+        );
+    </script>
+</footer>
+
+</html>
