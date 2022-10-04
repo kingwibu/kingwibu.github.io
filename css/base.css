@@ -1,0 +1,11 @@
+* {
+    box-sizing: inherits;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.2;
+    /* font-family: 'Noto Serif', serif; */
+    font-family: 'Open Sans', sans-serif;
+}
