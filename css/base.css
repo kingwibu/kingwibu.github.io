@@ -8,4 +8,7 @@ html {
     line-height: 1.2;
     /* font-family: 'Noto Serif', serif; */
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    color: #80504e;
+    background-color: #f1e4dc;
 }
